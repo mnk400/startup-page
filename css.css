@@ -1,0 +1,143 @@
+@font-face {
+	font-family: 'SF Mono';
+	src:  url('/user/manik/library/fonts/SFmono-Light.otf') format('otf');
+	font-style: normal;
+	font-weight: lighter;
+}
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+  background-color: #111111;
+	color: #FFFFFF;
+	font-size: 14px;
+
+}
+
+* {
+	font-family: 'SF Mono';
+	font-weight: lighter;
+}
+/*
+#backgroundc{
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background-image: url("/users/manik/downloads/start-page-master/back.jpg");
+	-webkit-filter: blur(5px);
+	background-size: cover;
+	position: fixed;
+}
+*/
+#container {
+	z-index: 9999;
+	position: fixed;
+	padding: 0 0px 0 0px;
+	top: 35%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: auto;
+}
+
+#header {
+	z-index: 10;
+	-webkit-box-shadow: 1px 1px 4px 0px #111;
+	-moz-box-shadow: 1px 1px 4px 0px #111;
+	box-shadow: 1px 1px 4px 0px #111;
+	border-radius: 4px;
+	background-color: #101010;
+	margin: 4px;
+	padding: 8px;
+	border: 5px solid #101010;
+}
+
+
+#links {
+	display: -moz-box;
+	display: -webkit-box;
+	width: 100%;
+}
+
+.linksbox {
+	-webkit-box-shadow: 1px 1px 4px 0px #111;
+	-moz-box-shadow: 1px 1px 4px 0px #111;
+	box-shadow: 1px 1px 4px 0px #111;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	border-radius: 4px;
+	margin: 4px;
+	padding: 8px 8px 8px 8px;
+	background-color: #101010;
+	border: 5px solid #101010;
+}
+
+.linksbox h3 {
+	padding-bottom: 5px;
+}
+
+.linksbox a{
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.linksbox a.cyan:hover {
+	font-style: italic;
+}
+
+.linksbox a.pink:hover {
+	font-style: italic;
+}
+h3 {
+	font-size: 14px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.cyan {
+	color: #5c8cbc;
+	padding: 0;
+}
+
+.blue {
+	color: #708ca4;
+	padding: 0;
+}
+
+.green {
+	padding: 0;
+	color: #4fa7a1;
+}
+
+.pink {
+	padding: 0;
+	color: #8c6d94;
+}
+
+.red {
+	padding: 0;
+	color: #bf535f;
+}
+.gray {
+	padding: 0;
+	color: #B4B4B4;
+}
+
+form {
+	display: inline;
+}
+
+input 	{
+	display: inline;
+	background: none;
+	display: inline;
+	border: none;
+	color: #FFF;
+	width: 70%;
+	font-size: 14px;
+}

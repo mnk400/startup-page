@@ -7,7 +7,6 @@
 				var h=today.getHours();
 				var m=today.getMinutes();
 				var s=today.getSeconds();
-				// add a zero in front of numbers<10
 				m=checkTime(m);
 				s=checkTime(s);
 				document.getElementById('txt').innerHTML=h%12+":"+m;
@@ -24,7 +23,7 @@
 		</script>
 		<title>Homepage</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css.css" />
 	</head>
 	<body onload="startTime()">
   <div id="backgroundc">
@@ -34,18 +33,16 @@
 				<form method="get" action="https://www.google.com/search">
 					<input type="text" autofocus="autofocus" name="q" \>
 				</form>
-
 			</div>
 			<div id="links">
 
 				<div class="linksbox">
 					<h3><span class="red"> ~ [General]</span><span class="blue">:</span> ls</h3>
-			        <a class="cyan" target="blank" href="http://stackoverflow.com/">Stack Overflow</a>
-			        <a class="pink"  target="blank" href="https://shancarter.github.io/mr-data-converter/">Mr Data Converter</a>
+			        <a class="cyan" target="blank" href="http://amazon.in">Amazon</a>
+			        <a class="pink"  target="blank" href="https://twitter.com">Twitter</a>
 					<a class="pink"  target="blank" href="https://gmail.com">Gmail</a>
 			        <a class="cyan" target="blank" href="https://youtube.com">Youtube</a>
 			        <a class="cyan" target="blank" href="https://github.com/">Github</a>
-					<a class="pink"  target="blank" href="#">7Cav</a>
 				</div>
 
 				<div class="linksbox">
@@ -55,26 +52,21 @@
 			        <a class="cyan" target="blank" href="https://www.reddit.com/r/unixporn/">/r/unixporn</a>
 					<a class="cyan" target="blank" href="https://www.reddit.com/r/askreddit/">/r/askreddit</a>
 					<a class="cyan" target="blank" href="https://www.reddit.com/r//">/r/EarthPorn</a>
-					<a class="cyan" target="blank" href="https://www.reddit.com/r/VaporwaveAesthetics/">/r/VaporwaveAesthetics</a>
 				</div>
 
 				<div class="linksbox">
 					<h3><span class="red"> ~ [University]</span><span class="blue">:</span> ls</h3>
 			        <a class="pink"  target="blank" href="#">ERP</a>
 					<a class="pink"  target="blank" href="#">LMS<S</a>
-			        <a class="cyan" target="blank" href="#">Site Home</a>
 					<a class="cyan" target="blank" href="#">Library</a>
-					<a class="cyan" target="blank" href="#">COMP201</a>
-					<a class="cyan" target="blank" href="#">COMP219</a>
+					<a class="cyan" target="blank" href="#">Biometric</a>
+					<a class="cyan" target="blank" href="#">OTMS</a>
 				</div>
 
 			</div>
-		</div>
-		<div class="tm" >
-			<h3><span class="red"> ~ </span><span class="green"> echo "</span>
-
-
-			<h3>
+			<div id="header">
+				<h3 style="display: inline"><span class="red"> ~ </span><span class="green"> echo " </span><span class="gray">Welcome Manik!, current time is </span> <span class="gray" id="txt"></span><span class="green"> "</span>
+			</div>
 		</div>
 	</div>
 	</body>
