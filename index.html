@@ -1,10 +1,32 @@
 <!DOCTYPE HTML>
 	<head>
+		<script type="text/javascript">
+			function startTime()
+			{
+				var today=new Date();
+				var h=today.getHours();
+				var m=today.getMinutes();
+				var s=today.getSeconds();
+				// add a zero in front of numbers<10
+				m=checkTime(m);
+				s=checkTime(s);
+				document.getElementById('txt').innerHTML=h%12+":"+m;
+				t=setTimeout('startTime()',500);
+			}
+			function checkTime(i)
+			{
+				if (i<10)
+				{
+					i="0" + i;
+				}
+				return i;
+			}
+		</script>
 		<title>Homepage</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
+	<body onload="startTime()">
   <div id="backgroundc">
 		<div id="container">
 			<div id="header">
@@ -38,15 +60,21 @@
 
 				<div class="linksbox">
 					<h3><span class="red"> ~ [University]</span><span class="blue">:</span> ls</h3>
-			        <a class="pink"  target="blank" href="#">Liverpool life</a>
-					<a class="pink"  target="blank" href="#">Print Anywhere</a>
-			        <a class="cyan" target="blank" href="#">CS Department</a>
-					<a class="cyan" target="blank" href="#">COMP213</a>
+			        <a class="pink"  target="blank" href="#">ERP</a>
+					<a class="pink"  target="blank" href="#">LMS<S</a>
+			        <a class="cyan" target="blank" href="#">Site Home</a>
+					<a class="cyan" target="blank" href="#">Library</a>
 					<a class="cyan" target="blank" href="#">COMP201</a>
 					<a class="cyan" target="blank" href="#">COMP219</a>
 				</div>
 
 			</div>
+		</div>
+		<div class="tm" >
+			<h3><span class="red"> ~ </span><span class="green"> echo "</span>
+
+
+			<h3>
 		</div>
 	</div>
 	</body>
